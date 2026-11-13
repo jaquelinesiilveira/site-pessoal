@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- Título e SEO Editorial -->
+  <title>Ateliê Marfim — Nail Design Autoral | Ipanema, Rio de Janeiro</title>
+  <meta name="description" content="Ateliê privativo de nail design em Ipanema, RJ. Esmaltação em gel, blindagem e alongamentos com atendimento exclusivo com hora marcada por Camila Duarte." />
+  <meta name="author" content="Camila Duarte · Ateliê Marfim" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ateliemarfim.com.br" />
+
+  <!-- Open Graph / Meta Compartilhamento -->
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ateliê Marfim — Nail Design Autoral em Ipanema" />
+  <meta property="og:description" content="Unhas pensadas uma a uma. Atendimento privativo com hora marcada por Camila Duarte, Ipanema, Rio de Janeiro." />
+  <meta property="og:url" content="https://ateliemarfim.com.br" />
+  <meta property="og:site_name" content="Ateliê Marfim" />
+  <meta property="og:image" content="assets/img/hero.jpg" />
+
+  <!-- Favicon elegante minimalista -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F6F1EA'/%3E%3Ctext x='50%25' y='68%25' font-family='serif' font-size='20' font-style='italic' fill='%23B5694F' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E" type="image/svg+xml" />
+
+  <!-- Tipografia Google Fonts: Fraunces & Instrument Sans (display=swap para performance) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
+
+  <!-- Estilos Principais -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Dados Estruturados Schema.org: BeautySalon / LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Ateliê Marfim — Nail Design",
+    "image": "https://ateliemarfim.com.br/assets/img/hero.jpg",
+    "description": "Ateliê privativo de nail design autoral em Ipanema, Rio de Janeiro. Esmaltação em gel, blindagem e alongamentos com atendimento exclusivo de uma cliente por vez por Camila Duarte.",
+    "founder": {
+      "@type": "Person",
+      "name": "Camila Duarte",
+      "jobTitle": "Nail Designer"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua das Hortênsias, 128, sala 204",
+      "addressLocality": "Ipanema",
+      "addressRegion": "RJ",
+      "postalCode": "22410-000",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -22.9845,
+      "longitude": -43.2045
+    },
+    "telephone": "+55-21-99876-5432",
+    "priceRange": "$$",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "19:00"
+      }
+    ],
+    "sameAs": [
+      "https://instagram.com/ateliemarfim.nails"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ======================================================================
+       HEADER PRINCIPAL
+       Logotipo em texto, navegação âncora e botão Agendar fixo
+       ====================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="#hero" class="brand-link" aria-label="Ateliê Marfim — Início">
+        <span class="brand-name">Ateliê Marfim</span>
+        <span class="brand-tag">Nail Design</span>
+      </a>
+
+      <!-- Navegação Desktop -->
+      <nav class="nav-desktop" aria-label="Navegação principal">
+        <a href="#trabalhos" class="nav-link">Trabalhos</a>
+        <a href="#antes-depois" class="nav-link">Antes e depois</a>
+        <a href="#servicos" class="nav-link">Serviços</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#duvidas" class="nav-link">Dúvidas</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+
+      <!-- Ações do Header -->
+      <div class="header-actions">
+        <a href="https://wa.me/5521998765432" data-wa-action class="btn btn-terracota btn-header-agendar">
+          Agendar
+        </a>
+
+        <!-- Botão Menu Mobile (Hamburguer editorial discreto) -->
+        <button 
+          type="button" 
+          class="menu-toggle" 
+          id="menu-toggle" 
+          aria-label="Abrir menu de navegação" 
+          aria-expanded="false" 
+          aria-controls="mobile-nav"
+        >
+          <span class="menu-toggle-line"></span>
+          <span class="menu-toggle-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MENU MOBILE EM TELA CHEIA
+       ====================================================================== -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <ul class="mobile-nav-links">
+      <li><a href="#trabalhos" class="mobile-nav-link">Trabalhos</a></li>
+      <li><a href="#antes-depois" class="mobile-nav-link">Antes e depois</a></li>
+      <li><a href="#servicos" class="mobile-nav-link">Serviços e valores</a></li>
+      <li><a href="#sobre" class="mobile-nav-link">Sobre a Camila</a></li>
+      <li><a href="#duvidas" class="mobile-nav-link">Dúvidas frequentes</a></li>
+      <li><a href="#contato" class="mobile-nav-link">Contato & agendamento</a></li>
+    </ul>
+
+    <div class="mobile-nav-footer">
+      <p class="mobile-nav-meta">Terça a sábado, das 9h às 19h<br>Ipanema, Rio de Janeiro</p>
+      <a href="https://wa.me/5521998765432" data-wa-action class="btn btn-terracota">
+        Chamar no WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <main id="conteudo-principal">
+
+    <!-- ======================================================================
+         HERO EDITORIAL
+         Assimétrico: texto amplo à esquerda, foto quase altura total à direita
+         ====================================================================== -->
+    <section class="hero-section" id="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <span class="hero-meta-badge">Terça a sábado · Ipanema, RJ</span>
+            <h1 id="hero-title" class="hero-title">Unhas pensadas uma a uma.</h1>
+            <p class="hero-subtitle">
+              Nail design autoral em Ipanema. Atendimento com hora marcada, uma cliente por vez.
+            </p>
+            <div class="hero-actions">
+              <a href="https://wa.me/5521998765432" data-wa-action class="btn btn-terracota">
+                Agendar pelo WhatsApp
+              </a>
+              <a href="#trabalhos" class="btn-text-link">
+                Ver trabalhos <span class="arrow-icon" aria-hidden="true">↓</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-image-wrap">
+            <div class="hero-image-frame">
+              <img 
+                src="assets/img/hero.jpg" 
+                alt="Retrato editorial no Ateliê Marfim, exibindo trabalho de esmaltação autoral em linho cru" 
+                width="896" 
+                height="1200"
+                fetchpriority="high"
+              />
+            </div>
+            <div class="hero-image-caption">
+              <span>Ateliê Marfim</span>
+              <span>Ipanema · Rio de Janeiro</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         01 — TRABALHOS (GALERIA EM MOSAICO COM LIGHTBOX)
+         ====================================================================== -->
+    <section class="section-editorial section-editorial--marfim" id="trabalhos" aria-labelledby="titulo-trabalhos">
+      <div class="container">
+        <header class="editorial-header editorial-reveal">
+          <span class="editorial-num">01 — Galeria</span>
+          <h2 id="titulo-trabalhos" class="editorial-title">Trabalhos recentes</h2>
+        </header>
+
+        <!-- Filtros em texto simples -->
+        <nav class="gallery-controls editorial-reveal" aria-label="Filtrar trabalhos por categoria">
+          <div class="gallery-filters" role="group">
+            <button type="button" class="gallery-filter-btn is-active" data-filter="Todos" aria-pressed="true">Todos</button>
+            <button type="button" class="gallery-filter-btn" data-filter="Minimalistas" aria-pressed="false">Minimalistas</button>
+            <button type="button" class="gallery-filter-btn" data-filter="Nail art" aria-pressed="false">Nail art</button>
+            <button type="button" class="gallery-filter-btn" data-filter="Francesinhas" aria-pressed="false">Francesinhas</button>
+            <button type="button" class="gallery-filter-btn" data-filter="Alongamento" aria-pressed="false">Alongamento</button>
+            <button type="button" class="gallery-filter-btn" data-filter="Noivas" aria-pressed="false">Noivas</button>
+          </div>
+        </nav>
+
+        <!-- Mosaico Masonry (populado via data/galeria.js) -->
+        <div class="gallery-grid" id="gallery-grid" aria-live="polite">
+          <!-- Os 12 itens são renderizados aqui dinamicamente pelo script -->
+        </div>
+
+        <!-- Rodapé da Seção de Trabalhos -->
+        <div class="gallery-footer-cta editorial-reveal">
+          <a href="https://instagram.com/ateliemarfim.nails" target="_blank" rel="noopener noreferrer">
+            Veja mais no Instagram @ateliemarfim.nails <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         02 — ANTES E DEPOIS (SLIDER INTERATIVO)
+         ====================================================================== -->
+    <section class="section-editorial section-editorial--nude" id="antes-depois" aria-labelledby="titulo-antes-depois">
+      <div class="container">
+        <header class="editorial-header editorial-reveal">
+          <span class="editorial-num">02 — Transformação</span>
+          <h2 id="titulo-antes-depois" class="editorial-title">Antes e depois</h2>
+          <p class="editorial-lead">
+            Unhas roídas, quebradiças ou com alongamento antigo também ganham uma segunda chance.
+          </p>
+        </header>
+
+        <div class="ba-comparisons-grid">
+
+          <!-- Caso 01 -->
+          <article class="ba-card editorial-reveal">
+            <div class="before-after-slider" aria-label="Comparação antes e depois: Reconstrução e blindagem de unha roída">
+              <!-- Imagem de Antes (Fundo) -->
+              <div class="ba-before-wrap">
+                <img 
+                  src="assets/img/antes-01.jpg" 
+                  alt="Unhas curtas e roídas antes do procedimento no ateliê" 
+                  width="900" 
+                  height="675" 
+                  loading="lazy" 
+                />
+                <span class="ba-badge ba-badge--before">Antes</span>
+              </div>
+
+              <!-- Imagem de Depois (Camada sobreposta recortada) -->
+              <div class="ba-after-wrap">
+                <img 
+                  src="assets/img/depois-01.jpg" 
+                  alt="Unhas recuperadas com blindagem estruturada e esmaltação nude impecável" 
+                  width="900" 
+                  height="675" 
+                  loading="lazy" 
+                />
+                <span class="ba-badge ba-badge--after">Depois</span>
+              </div>
+
+              <!-- Barra de controle deslizante -->
+              <div class="ba-handle" aria-hidden="true">
+                <span class="ba-handle-line"></span>
+                <span class="ba-handle-knob">‹ ›</span>
+              </div>
+
+              <!-- Input acessível para leitores de tela e teclado -->
+              <input 
+                type="range" 
+                min="0" 
+                max="100" 
+                value="50" 
+                class="ba-range-input" 
+                aria-label="Controle deslizante de antes e depois: Reconstrução de unhas roídas"
+              />
+            </div>
+            <div class="ba-meta">
+              <h3 class="ba-title">Reconstrução e blindagem estruturada</h3>
+              <p class="ba-desc">Recuperação de leito ungueal roído e proteção para crescimento saudável.</p>
+            </div>
+          </article>
+
+          <!-- Caso 02 -->
+          <article class="ba-card editorial-reveal">
+            <div class="before-after-slider" aria-label="Comparação antes e depois: Transição de formato e remoção de alongamento antigo">
+              <div class="ba-before-wrap">
+                <img 
+                  src="assets/img/antes-02.jpg" 
+                  alt="Alongamento desatualizado com crescimento visível e perda de simetria" 
+                  width="900" 
+                  height="675" 
+                  loading="lazy" 
+                />
+                <span class="ba-badge ba-badge--before">Antes</span>
+              </div>
+
+              <div class="ba-after-wrap">
+                <img 
+                  src="assets/img/depois-02.jpg" 
+                  alt="Transição harmoniosa para formato amêndoa com alinhamento de ponto de tensão" 
+                  width="900" 
+                  height="675" 
+                  loading="lazy" 
+                />
+                <span class="ba-badge ba-badge--after">Depois</span>
+              </div>
+
+              <div class="ba-handle" aria-hidden="true">
+                <span class="ba-handle-line"></span>
+                <span class="ba-handle-knob">‹ ›</span>
+              </div>
+
+              <input 
+                type="range" 
+                min="0" 
+                max="100" 
+                value="50" 
+                class="ba-range-input" 
+                aria-label="Controle deslizante de antes e depois: Manutenção e transição de formato"
+              />
+            </div>
+            <div class="ba-meta">
+              <h3 class="ba-title">Manutenção e transição para formato amêndoa</h3>
+              <p class="ba-desc">Correção de curvatura e reestruturação do ápice sem danificar a lâmina natural.</p>
+            </div>
+          </article>
+
+          <!-- Caso 03 -->
+          <article class="ba-card editorial-reveal">
+            <div class="before-after-slider" aria-label="Comparação antes e depois: Tratamento e blindagem de recuperação">
+              <div class="ba-before-wrap">
+                <img 
+                  src="assets/img/antes-03.jpg" 
+                  alt="Lâmina ungueal ressecada com descamação e quebras nas bordas antes do tratamento" 
+                  width="900" 
+                  height="675" 
+                  loading="lazy" 
+                />
+                <span class="ba-badge ba-badge--before">Antes</span>
+              </div>
+
+              <div class="ba-after-wrap">
+                <img 
+                  src="assets/img/depois-03.jpg" 
+                  alt="Lâmina recuperada com blindagem nutritiva e acabamento impecável em tom marfim" 
+                  width="900" 
+                  height="675" 
+                  loading="lazy" 
+                />
+                <span class="ba-badge ba-badge--after">Depois</span>
+              </div>
+
+              <div class="ba-handle" aria-hidden="true">
+                <span class="ba-handle-line"></span>
+                <span class="ba-handle-knob">‹ ›</span>
+              </div>
+
+              <input 
+                type="range" 
+                min="0" 
+                max="100" 
+                value="50" 
+                class="ba-range-input" 
+                aria-label="Controle deslizante de antes e depois: Blindagem de recuperação"
+              />
+            </div>
+            <div class="ba-meta">
+              <h3 class="ba-title">Tratamento e blindagem de recuperação</h3>
+              <p class="ba-desc">Fortalecimento intensivo de unhas frágeis com alinhamento e esmaltação suave.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         03 — SERVIÇOS E VALORES (CARDÁPIO EDITORIAL)
+         ====================================================================== -->
+    <section class="section-editorial section-editorial--marfim" id="servicos" aria-labelledby="titulo-servicos">
+      <div class="container">
+        <header class="editorial-header editorial-reveal">
+          <span class="editorial-num">03 — Cardápio</span>
+          <h2 id="titulo-servicos" class="editorial-title">Serviços e valores</h2>
+        </header>
+
+        <div class="services-menu-card editorial-reveal">
+          <ul class="services-list" role="list">
+
+            <!-- Item 1 -->
+            <li class="service-row">
+              <div class="service-header-line">
+                <h3 class="service-name">Manicure com esmaltação em gel</h3>
+                <span class="service-dots-leader" aria-hidden="true"></span>
+                <span class="service-price">a partir de R$ 90</span>
+              </div>
+              <p class="service-desc">Cuticulagem russa combinada, nivelamento suave do leito e esmaltação com secagem imediata em cabine LED.</p>
+            </li>
+
+            <!-- Item 2 -->
+            <li class="service-row">
+              <div class="service-header-line">
+                <h3 class="service-name">Blindagem em gel</h3>
+                <span class="service-dots-leader" aria-hidden="true"></span>
+                <span class="service-price">a partir de R$ 130</span>
+              </div>
+              <p class="service-desc">Camada estrutural de reforço sobre a unha natural. Ideal para unhas frágeis, descamadas ou quebradiças.</p>
+            </li>
+
+            <!-- Item 3 -->
+            <li class="service-row">
+              <div class="service-header-line">
+                <h3 class="service-name">Alongamento em gel (aplicação)</h3>
+                <span class="service-dots-leader" aria-hidden="true"></span>
+                <span class="service-price">a partir de R$ 220</span>
+              </div>
+              <p class="service-desc">Extensão sob medida em fibra de vidro ou molde russo. Curvatura precisa, espessura natural e formato harmonioso.</p>
+            </li>
+
+            <!-- Item 4 -->
+            <li class="service-row">
+              <div class="service-header-line">
+                <h3 class="service-name">Manutenção de alongamento</h3>
+                <span class="service-dots-leader" aria-hidden="true"></span>
+                <span class="service-price">a partir de R$ 160</span>
+              </div>
+              <p class="service-desc">Reposição de crescimento, balanceamento do ponto de ápice, higienização profunda e nova esmaltação completa.</p>
+            </li>
+
+            <!-- Item 5 -->
+            <li class="service-row">
+              <div class="service-header-line">
+                <h3 class="service-name">Nail art (por unha)</h3>
+                <span class="service-dots-leader" aria-hidden="true"></span>
+                <span class="service-price">a partir de R$ 10</span>
+              </div>
+              <p class="service-desc">Pintura à mão livre, filetes metálicos, folha de ouro encapsulada, grafismos terrosos ou pedrarias delicadas.</p>
+            </li>
+
+            <!-- Item 6 -->
+            <li class="service-row">
+              <div class="service-header-line">
+                <h3 class="service-name">Francesinha e minimalistas</h3>
+                <span class="service-dots-leader" aria-hidden="true"></span>
+                <span class="service-price">a partir de R$ 110</span>
+              </div>
+              <p class="service-desc">Traço ultrafino de precisão, sorriso profundo, francesinha invertida ou variações geométricas monocromáticas.</p>
+            </li>
+
+            <!-- Item 7 -->
+            <li class="service-row">
+              <div class="service-header-line">
+                <h3 class="service-name">Pacote noivas (teste + dia)</h3>
+                <span class="service-dots-leader" aria-hidden="true"></span>
+                <span class="service-price">sob consulta</span>
+              </div>
+              <p class="service-desc">Ensaio prévio com teste de tonalidades e acabamentos em harmonia com o vestido, mais atendimento prioritário na semana da cerimônia.</p>
+            </li>
+
+            <!-- Item 8 -->
+            <li class="service-row">
+              <div class="service-header-line">
+                <h3 class="service-name">Remoção de alongamento</h3>
+                <span class="service-dots-leader" aria-hidden="true"></span>
+                <span class="service-price">R$ 70</span>
+              </div>
+              <p class="service-desc">Remoção mecânica e química controlada, sem abrasão agressiva da queratina, finalizada com hidratação e polimento nutritivo.</p>
+            </li>
+
+          </ul>
+
+          <div class="services-note-block">
+            <p class="services-note-text">
+              Os valores variam conforme o comprimento e o nível de detalhe. O orçamento exato é confirmado no WhatsApp, com a sua referência.
+            </p>
+            <a href="https://wa.me/5521998765432" data-wa-action class="btn btn-outline" style="min-height: 40px; padding: 0 20px; font-size: 0.85rem;">
+              Enviar foto de referência
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         04 — SOBRE (CAMILA DUARTE & ATELIÊ PRIVATIVO)
+         ====================================================================== -->
+    <section class="section-editorial section-editorial--nude" id="sobre" aria-labelledby="titulo-sobre">
+      <div class="container">
+        <div class="about-grid">
+
+          <div class="about-portrait-wrap editorial-reveal">
+            <div class="about-portrait-frame">
+              <img 
+                src="assets/img/sobre.jpg" 
+                alt="Retrato profissional de Camila Duarte em seu ateliê em Ipanema" 
+                width="896" 
+                height="1200" 
+                loading="lazy" 
+              />
+            </div>
+            <p class="about-portrait-caption">Camila Duarte · Fundadora do Ateliê Marfim</p>
+          </div>
+
+          <div class="about-content editorial-reveal">
+            <header class="editorial-header" style="margin-bottom: 24px;">
+              <span class="editorial-num">04 — Sobre</span>
+              <h2 id="titulo-sobre" class="editorial-title">Oi, eu sou a Camila.</h2>
+            </header>
+
+            <div class="about-text">
+              <p>
+                Faço unhas há sete anos e abri o Ateliê Marfim para trabalhar do jeito que acredito: sem pressa e sem fila de espera. Cada atendimento tem tempo reservado para conversar sobre o que você gosta, desenhar com calma e finalizar com cuidado.
+              </p>
+              <p>
+                Uso materiais profissionais de marcas reconhecidas, esterilizo todos os alicates e instrumentos em autoclave e descarto o que é descartável na sua frente.
+              </p>
+            </div>
+
+            <!-- Três fatos em linha, sem ícones decorativos -->
+            <div class="about-facts-strip">
+              <span class="about-fact-item">7 anos de experiência</span>
+              <span class="about-fact-item">Autoclave e materiais descartáveis</span>
+              <span class="about-fact-item">Uma cliente por vez</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         05 — DEPOIMENTOS (FORMATO PULL-QUOTE EDITORIAL)
+         ====================================================================== -->
+    <section class="section-editorial section-editorial--marfim" id="depoimentos" aria-labelledby="titulo-depoimentos">
+      <div class="container">
+        <header class="editorial-header editorial-reveal">
+          <span class="editorial-num">05 — Vozes</span>
+          <h2 id="titulo-depoimentos" class="editorial-title">Depoimentos</h2>
+        </header>
+
+        <div class="testimonials-editorial-grid">
+
+          <!-- Depoimento 1 -->
+          <blockquote class="testimonial-quote-card editorial-reveal">
+            <span class="testimonial-quote-mark" aria-hidden="true">“</span>
+            <p class="testimonial-quote-body">
+              Levei uma foto borrada do Pinterest e ela entendeu exatamente o que eu queria. Durou mais de três semanas sem descolar.
+            </p>
+            <footer class="testimonial-author-block">
+              <cite>
+                <span class="testimonial-author-name">Renata</span>
+                <span class="testimonial-author-location">· Leblon</span>
+              </cite>
+            </footer>
+          </blockquote>
+
+          <!-- Depoimento 2 -->
+          <blockquote class="testimonial-quote-card editorial-reveal">
+            <span class="testimonial-quote-mark" aria-hidden="true">“</span>
+            <p class="testimonial-quote-body">
+              O silêncio do ateliê é um alívio. Você senta, toma um café bom e sabe que aquele tempo é só seu, sem correria de salão comum.
+            </p>
+            <footer class="testimonial-author-block">
+              <cite>
+                <span class="testimonial-author-name">Mariana</span>
+                <span class="testimonial-author-location">· Ipanema</span>
+              </cite>
+            </footer>
+          </blockquote>
+
+          <!-- Depoimento 3 -->
+          <blockquote class="testimonial-quote-card editorial-reveal">
+            <span class="testimonial-quote-mark" aria-hidden="true">“</span>
+            <p class="testimonial-quote-body">
+              Minha unha era finíssima e quebrava à toa. A blindagem da Camila mudou tudo: natural, sem grossura artificial e impecável.
+            </p>
+            <footer class="testimonial-author-block">
+              <cite>
+                <span class="testimonial-author-name">Beatriz</span>
+                <span class="testimonial-author-location">· Jardim Botânico</span>
+              </cite>
+            </footer>
+          </blockquote>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         06 — DÚVIDAS FREQUENTES (ACORDEÃO ACESSÍVEL WAI-ARIA)
+         ====================================================================== -->
+    <section class="section-editorial section-editorial--nude" id="duvidas" aria-labelledby="titulo-duvidas">
+      <div class="container">
+        <header class="editorial-header editorial-reveal">
+          <span class="editorial-num">06 — Dúvidas</span>
+          <h2 id="titulo-duvidas" class="editorial-title">Dúvidas frequentes</h2>
+        </header>
+
+        <div class="faq-accordion-container editorial-reveal">
+
+          <!-- Pergunta 1 -->
+          <div class="faq-item">
+            <button 
+              type="button" 
+              class="faq-trigger" 
+              id="faq-btn-1" 
+              aria-expanded="false" 
+              aria-controls="faq-panel-1"
+            >
+              <span class="faq-question-text">Quanto tempo dura o gel?</span>
+              <span class="faq-icon-indicator" aria-hidden="true"></span>
+            </button>
+            <div id="faq-panel-1" class="faq-panel" role="region" aria-labelledby="faq-btn-1">
+              <div class="faq-panel-content">
+                De 3 a 4 semanas, dependendo da sua rotina diária e do ritmo natural de crescimento da sua unha. Para preservar a saúde da lâmina e a estrutura do ponto de tensão, recomendamos realizar a manutenção periódica nesse intervalo.
+              </div>
+            </div>
+          </div>
+
+          <!-- Pergunta 2 -->
+          <div class="faq-item">
+            <button 
+              type="button" 
+              class="faq-trigger" 
+              id="faq-btn-2" 
+              aria-expanded="false" 
+              aria-controls="faq-panel-2"
+            >
+              <span class="faq-question-text">Posso levar uma referência?</span>
+              <span class="faq-icon-indicator" aria-hidden="true"></span>
+            </button>
+            <div id="faq-panel-2" class="faq-panel" role="region" aria-labelledby="faq-btn-2">
+              <div class="faq-panel-content">
+                Sim, e é ótimo! Você pode enviar referências pelo WhatsApp ao solicitar o agendamento (o que nos ajuda a prever o tempo necessário de nail art) ou levar fotos e inspirações no próprio dia do atendimento.
+              </div>
+            </div>
+          </div>
+
+          <!-- Pergunta 3 -->
+          <div class="faq-item">
+            <button 
+              type="button" 
+              class="faq-trigger" 
+              id="faq-btn-3" 
+              aria-expanded="false" 
+              aria-controls="faq-panel-3"
+            >
+              <span class="faq-question-text">Quanto tempo dura o atendimento?</span>
+              <span class="faq-icon-indicator" aria-hidden="true"></span>
+            </button>
+            <div id="faq-panel-3" class="faq-panel" role="region" aria-labelledby="faq-btn-3">
+              <div class="faq-panel-content">
+                De 1h30 a 3h, dependendo do serviço contratado (esmaltação simples, blindagem, aplicação inicial de alongamento ou complexidade da nail art). O ateliê opera sem pressa para garantir acabamento milimétrico e durabilidade exemplar.
+              </div>
+            </div>
+          </div>
+
+          <!-- Pergunta 4 -->
+          <div class="faq-item">
+            <button 
+              type="button" 
+              class="faq-trigger" 
+              id="faq-btn-4" 
+              aria-expanded="false" 
+              aria-controls="faq-panel-4"
+            >
+              <span class="faq-question-text">Como funciona o agendamento?</span>
+              <span class="faq-icon-indicator" aria-hidden="true"></span>
+            </button>
+            <div id="faq-panel-4" class="faq-panel" role="region" aria-labelledby="faq-btn-4">
+              <div class="faq-panel-content">
+                O agendamento é realizado diretamente pelo WhatsApp. Para reservar a vaga exclusiva na agenda, solicitamos um sinal de 30%, que é integralmente abatido no valor final do serviço no dia do seu atendimento.
+              </div>
+            </div>
+          </div>
+
+          <!-- Pergunta 5 -->
+          <div class="faq-item">
+            <button 
+              type="button" 
+              class="faq-trigger" 
+              id="faq-btn-5" 
+              aria-expanded="false" 
+              aria-controls="faq-panel-5"
+            >
+              <span class="faq-question-text">E se eu precisar remarcar?</span>
+              <span class="faq-icon-indicator" aria-hidden="true"></span>
+            </button>
+            <div id="faq-panel-5" class="faq-panel" role="region" aria-labelledby="faq-btn-5">
+              <div class="faq-panel-content">
+                Pedimos a gentileza de avisar com pelo menos 24 horas de antecedência para realocarmos o horário sem custos adicionais. Atrasos superiores a 20 minutos podem comprometer o horário da cliente seguinte e exigir remarcação da data.
+              </div>
+            </div>
+          </div>
+
+          <!-- Pergunta 6 -->
+          <div class="faq-item">
+            <button 
+              type="button" 
+              class="faq-trigger" 
+              id="faq-btn-6" 
+              aria-expanded="false" 
+              aria-controls="faq-panel-6"
+            >
+              <span class="faq-question-text">Quais formas de pagamento?</span>
+              <span class="faq-icon-indicator" aria-hidden="true"></span>
+            </button>
+            <div id="faq-panel-6" class="faq-panel" role="region" aria-labelledby="faq-btn-6">
+              <div class="faq-panel-content">
+                Aceitamos Pix, cartão de débito e cartão de crédito (principais bandeiras: Visa, Mastercard, Elo).
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         07 — CONTATO & AGENDAMENTO
+         ====================================================================== -->
+    <section class="section-editorial section-editorial--marfim" id="contato" aria-labelledby="titulo-contato">
+      <div class="container">
+        <header class="editorial-header editorial-reveal">
+          <span class="editorial-num">07 — Contato</span>
+          <h2 id="titulo-contato" class="editorial-title">Vamos marcar?</h2>
+          <p class="editorial-lead">
+            Atendimento exclusivo com hora marcada em Ipanema. Envie sua mensagem para consultar as datas disponíveis desta semana.
+          </p>
+        </header>
+
+        <div class="contact-grid">
+
+          <div class="contact-info-col editorial-reveal">
+            <div class="contact-details-list">
+              <div class="contact-detail-item">
+                <span class="contact-label">Endereço</span>
+                <p class="contact-value">Rua das Hortênsias, 128, sala 204<br>Ipanema, Rio de Janeiro/RJ, CEP 22410-000</p>
+              </div>
+
+              <div class="contact-detail-item">
+                <span class="contact-label">Horário de funcionamento</span>
+                <p class="contact-value">Terça a sábado, das 9h às 19h<br><span style="color: var(--color-grafite-muted); font-size: 0.9em;">(Fecha domingo e segunda)</span></p>
+              </div>
+
+              <div class="contact-detail-item">
+                <span class="contact-label">Atendimento</span>
+                <p class="contact-value">Somente com hora marcada, em ateliê privativo<br><span style="color: var(--color-oliva); font-size: 0.9em;">(Uma cliente por vez)</span></p>
+              </div>
+            </div>
+
+            <div class="contact-actions-row">
+              <a 
+                href="https://wa.me/5521998765432" 
+                data-wa-action 
+                class="btn btn-terracota"
+              >
+                Chamar no WhatsApp
+              </a>
+              <a 
+                href="https://instagram.com/ateliemarfim.nails" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="btn btn-outline"
+              >
+                Ver no Instagram
+              </a>
+            </div>
+          </div>
+
+          <!-- Mapa incorporado com lazy loading para Ipanema, RJ -->
+          <div class="contact-map-col editorial-reveal">
+            <div class="map-frame-wrap">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14695.748618037332!2d-43.21250917631333!3d-22.985611174966675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9b11918dfafcd9%3A0x6b09c2a71f0084c8!2sIpanema%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+                title="Localização do Ateliê Marfim em Ipanema, Rio de Janeiro" 
+                loading="lazy" 
+                allowfullscreen="" 
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       RODAPÉ EDITORIAL
+       ====================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <span class="brand-name">Ateliê Marfim</span>
+          <span class="brand-tag">Nail Design</span>
+          <p class="footer-desc">
+            Nail design autoral em ateliê privativo em Ipanema. Sem pressa, sem fila, uma cliente por vez.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Navegação</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#trabalhos">Trabalhos</a></li>
+            <li><a href="#antes-depois">Antes e depois</a></li>
+            <li><a href="#servicos">Serviços e valores</a></li>
+            <li><a href="#sobre">Sobre a Camila</a></li>
+            <li><a href="#duvidas">Dúvidas frequentes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-col">
+          <h4 class="footer-col-title">Ateliê</h4>
+          <ul class="footer-nav-list">
+            <li>Rua das Hortênsias, 128, sala 204</li>
+            <li>Ipanema, Rio de Janeiro — RJ</li>
+            <li><a href="https://instagram.com/ateliemarfim.nails" target="_blank" rel="noopener noreferrer">@ateliemarfim.nails</a></li>
+            <li><a href="https://wa.me/5521998765432" data-wa-action>(21) 99876-5432</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Ateliê Marfim. Todos os direitos reservados.</p>
+        <p>Ipanema · Rio de Janeiro, RJ</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       BOTÃO FLUTUANTE MOBILE (WHATSAPP DISCRETO EM TERRACOTA)
+       Aparece apenas em telas pequenas após rolar pelo hero
+       ====================================================================== -->
+  <a 
+    href="https://wa.me/5521998765432" 
+    data-wa-action 
+    class="mobile-floating-cta" 
+    id="mobile-floating-cta" 
+    aria-hidden="true" 
+    aria-label="Agendar atendimento pelo WhatsApp"
+  >
+    Agendar
+  </a>
+
+  <!-- ======================================================================
+       LIGHTBOX MODAL ACESSÍVEL
+       ====================================================================== -->
+  <div 
+    id="gallery-lightbox" 
+    class="lightbox" 
+    role="dialog" 
+    aria-modal="true" 
+    aria-hidden="true" 
+    aria-label="Visualizador de fotos em alta resolução"
+  >
+    <div class="lightbox-backdrop"></div>
+
+    <button type="button" class="lightbox-btn lightbox-close" aria-label="Fechar visualizador (ESC)">
+      &times;
+    </button>
+    <button type="button" class="lightbox-btn lightbox-prev" aria-label="Foto anterior (Seta esquerda)">
+      &#8249;
+    </button>
+    <button type="button" class="lightbox-btn lightbox-next" aria-label="Próxima foto (Seta direita)">
+      &#8250;
+    </button>
+
+    <div class="lightbox-dialog">
+      <div class="lightbox-stage">
+        <img src="" alt="" class="lightbox-image" />
+      </div>
+      <div class="lightbox-meta">
+        <div>
+          <span class="lightbox-caption-text"></span>
+          <span class="lightbox-category-tag"></span>
+        </div>
+        <span class="lightbox-counter"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="data/galeria.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
